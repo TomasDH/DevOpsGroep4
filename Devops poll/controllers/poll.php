@@ -8,5 +8,5 @@ if ( $isPollAanwezig ) {
  $poll->updatePoll( $input );
 }
 $pollData = $poll->getPollData();
-$pollAlsHTML = include_once "views/poll-html.php";
+$pollAlsHTML = include_once "views/poll.php";
 return $pollAlsHTML;

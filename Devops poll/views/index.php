@@ -3,7 +3,6 @@ error_reporting( E_ALL );
 ini_set( "display_errors", 1 );
 include_once "models/Pagina_Data.class.php";
 $paginaData = new Pagina_Data();
-$paginaData->addCSS('views/layout.css');
 //$pageData->titel = "PHP/MySQL site poll voorbeeld";
 //wijzigingen aanbrengen in de code
 $dbInfo = "mysql:host=localhost;dbname=polldb"; $dbUser = "root";
