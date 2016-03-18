@@ -6,3 +6,8 @@ php:
   - '7.0'
   - hhvm
   - nightly
+before_install:
+  - php/home/travis/.phpenv/versions/5.4.25/bin/composer.char self-update
+before_script:
+  - composer install
+script: phpunit -- configuration phpunit.xml --coverage-text
